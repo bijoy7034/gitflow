@@ -10,3 +10,12 @@ jobs:
         steps:
         - name : "Bijoy"
           run: echo "Hello"
+    
+    deploy:
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+        - name : "Andrea"
+          run : |
+            echo "The deployment is successfull"
+            echo "Success...!!"
